@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+
+Resume_Analysis_Report.pdf
+
+.streamlit/
+
+*.log
+
+.idea/
+.vscode/
+
+data/*.csv
+list_models.py

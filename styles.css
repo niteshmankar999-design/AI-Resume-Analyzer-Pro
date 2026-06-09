@@ -1,0 +1,67 @@
+.main-title{
+    font-size:4rem;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:10px;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #818cf8,
+        #ec4899
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        filter:drop-shadow(0 0 10px #3b82f6);
+    }
+    to{
+        filter:drop-shadow(0 0 25px #8b5cf6);
+    }
+}
+
+.hero-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:40px;
+    margin-bottom:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.skill-pill{
+    display:inline-block;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.skill-pill:hover{
+    transform:translateY(-3px);
+}
+
+div[data-testid="metric-container"]{
+    background:rgba(255,255,255,.05);
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
